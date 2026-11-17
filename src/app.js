@@ -4,7 +4,6 @@ import cors from "cors";
 import helmet from "helmet";
 import compression from "compression";
 
-import { env } from "./config/env.js";
 import { ensureDB } from "./middleware/db.js";
 import { notFound, errorHandler } from "./middleware/error.js";
 import apiRoutes from "./routes/index.js";
@@ -15,6 +14,12 @@ const app = express();
 // Security & Proxy
 app.disable("x-powered-by");
 app.set("trust proxy", 1);
+
+// CORS - Allow all origins
+app.use(cors());
+
+// Explicitly handle preflight requests
+app.options(/.*/, cors());
 
 // Helmet
 app.use(
@@ -27,9 +32,6 @@ app.use(
 
 // Compression
 app.use(compression());
-
-// CORS - Allow requests from all origins
-app.use(cors());
 
 // Body Parser
 app.use(express.json({ limit: "1mb" }));
