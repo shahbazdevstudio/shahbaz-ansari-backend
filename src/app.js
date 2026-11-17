@@ -1,7 +1,9 @@
+
 import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import compression from "compression";
+
 import { env } from "./config/env.js";
 import { ensureDB } from "./middleware/db.js";
 import { notFound, errorHandler } from "./middleware/error.js";
@@ -10,31 +12,57 @@ import seoRoutes from "./routes/seoRoutes.js";
 
 const app = express();
 
+// Security & Proxy
 app.disable("x-powered-by");
 app.set("trust proxy", 1);
-app.use(helmet({ crossOriginResourcePolicy: { policy: "cross-origin" } }));
-app.use(compression());
+
+// Helmet
 app.use(
-  cors({
-    origin(origin, cb) {
-      // allow same-origin / curl and any whitelisted frontend
-      if (!origin || env.clientOrigins.includes(origin)) return cb(null, true);
-      if (!env.isProd && /^https?:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)) return cb(null, true);
-      cb(null, false);
+  helmet({
+    crossOriginResourcePolicy: {
+      policy: "cross-origin",
     },
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   })
 );
+
+// Compression
+app.use(compression());
+
+// CORS - Allow requests from all origins
+app.use(cors());
+
+// Body Parser
 app.use(express.json({ limit: "1mb" }));
 
-app.get("/", (_req, res) => res.json({ success: true, message: "Portfolio API is running" }));
-app.get("/api/health", (_req, res) => res.json({ success: true }));
+// Root Route
+app.get("/", (_req, res) => {
+  res.json({
+    success: true,
+    message: "Portfolio API is running",
+  });
+});
 
+// Health Check
+app.get("/api/health", (_req, res) => {
+  res.json({
+    success: true,
+    message: "API is healthy",
+  });
+});
+
+// Database Middleware
 app.use(ensureDB);
+
+// API Routes
 app.use("/api", apiRoutes);
+
+// SEO Routes
 app.use(seoRoutes);
 
+// 404 Handler
 app.use(notFound);
+
+// Global Error Handler
 app.use(errorHandler);
 
 export default app;
