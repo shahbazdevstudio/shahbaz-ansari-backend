@@ -1,0 +1,216 @@
+{
+  "projects": [
+    {
+      "title": "Spike Family",
+      "description": "A modern business website created to present company information and services through a clean layout, clear content structure, and professional user experience.",
+      "image": "/project-thumnails/project-1.png",
+      "demo": "https://shahbaz-project-1.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-1",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 0
+    },
+    {
+      "title": "Health Monitor",
+      "description": "A healthcare-focused website designed to present health services and information in a clear, organised, and easy-to-navigate interface.",
+      "image": "/project-thumnails/project-2.png",
+      "demo": "https://shahbaz-project-2.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-2",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 1
+    },
+    {
+      "title": "HealthCentreApp",
+      "description": "A modern website for a healthcare startup, designed to showcase its services and solutions with a clean interface and user-friendly experience.",
+      "image": "/project-thumnails/project-3.png",
+      "demo": "https://shahbaz-project-3.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-3",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 2
+    },
+    {
+      "title": "GYMSTER",
+      "description": "A fitness website built to showcase training programs, membership options, and gym services with an engaging and responsive design.",
+      "image": "/project-thumnails/project-4.png",
+      "demo": "https://shahbaz-project-4.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-4",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 3
+    },
+    {
+      "title": "CakeZone",
+      "description": "A modern bakery website designed to showcase cakes, desserts, and bakery services with an attractive layout, clear product presentation, and a smooth user experience.",
+      "image": "/project-thumnails/project-5.png",
+      "demo": "https://shahbaz-project-5.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-5",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 4
+    },
+    {
+      "title": "Angel Launchpad Ventures",
+      "description": "A startup investment platform that connects entrepreneurs with investors while presenting funding opportunities and venture-related information.",
+      "image": "/project-thumnails/project-6.png",
+      "demo": "https://shahbaz-project-6.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-6",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 5
+    },
+    {
+      "title": "Global CareGivers",
+      "description": "A caregiver database platform designed to help users explore caregiver profiles, services, and healthcare support resources efficiently.",
+      "image": "/project-thumnails/project-7.png",
+      "demo": "https://shahbaz-project-7.vercel.app/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-7",
+      "tech": [
+        "HTML",
+        "CSS",
+        "Bootstrap",
+        "JavaScript"
+      ],
+      "category": "",
+      "order": 6
+    },
+    {
+      "title": "Fatography",
+      "description": "A photography portfolio website built to showcase creative work, highlight services, and help potential clients connect with the photographer.",
+      "image": "/project-thumnails/project-8.png",
+      "demo": "https://fatography.co/",
+      "github": "https://github.com/shahbazansari-dev/shahbaz-project-8",
+      "tech": [
+        "React",
+        "Tailwind",
+        "Express",
+        "MongoDb"
+      ],
+      "category": "",
+      "order": 7
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Mitchell",
+      "title": "Product Manager",
+      "message": "Shahbaz built our entire SaaS dashboard from scratch — clean code, pixel-perfect UI, delivered ahead of schedule. Genuinely one of the best developers I've hired.",
+      "rating": 5,
+      "platform": "google",
+      "profilePic": "https://i.pravatar.cc/150?img=47",
+      "reviewDate": "2025-11-10",
+      "order": 0
+    },
+    {
+      "name": "Arjun Mehta",
+      "title": "Founder, E-Commerce",
+      "message": "Outstanding attention to detail. The landing page he built converted at 3× our previous rate. He understood our brand immediately.",
+      "rating": 5,
+      "platform": "google",
+      "profilePic": "https://i.pravatar.cc/150?img=68",
+      "reviewDate": "2025-09-22",
+      "order": 1
+    },
+    {
+      "name": "Emily Torres",
+      "title": "CEO, Marketplace",
+      "message": "Responsive, professional, and incredibly fast. Shahbaz redesigned our marketplace in under two weeks and the result looks like it cost 10×. Highly recommended to anyone serious about quality.",
+      "rating": 5,
+      "platform": "fiverr",
+      "profilePic": "https://i.pravatar.cc/150?img=32",
+      "reviewDate": "2025-08-05",
+      "order": 2
+    },
+    {
+      "name": "Daniel Park",
+      "title": "CTO, FinTech",
+      "message": "Top-tier full-stack work. He built our REST API, integrated payments, and polished the React frontend — all with zero major bugs at launch.",
+      "rating": 5,
+      "platform": "upwork",
+      "profilePic": "",
+      "reviewDate": "2025-06-18",
+      "order": 3
+    },
+    {
+      "name": "Nadia Al-Hassan",
+      "title": "Director, Agency",
+      "message": "Shahbaz has a rare combination of strong engineering skills and great design taste. Our app looks and feels premium now. Communication was excellent throughout.",
+      "rating": 5,
+      "platform": "linkedin",
+      "profilePic": "https://i.pravatar.cc/150?img=25",
+      "reviewDate": "2025-04-30",
+      "order": 4
+    },
+    {
+      "name": "Lucas Brennan",
+      "title": "Freelance Client",
+      "message": "Delivered a complex multi-step form flow with animations and mobile-first layout in record time. Code quality was excellent — well-structured and easy to maintain.",
+      "rating": 5,
+      "platform": "fiverr",
+      "profilePic": "https://i.pravatar.cc/150?img=51",
+      "reviewDate": "2025-02-14",
+      "order": 5
+    },
+    {
+      "name": "Priya Sharma",
+      "title": "Startup Founder",
+      "message": "We needed a complete rebrand of our web app and Shahbaz delivered beyond expectations. The new UI is modern, fast, and our users love it. Couldn't be happier.",
+      "rating": 5,
+      "platform": "google",
+      "profilePic": "https://i.pravatar.cc/150?img=9",
+      "reviewDate": "2024-12-01",
+      "order": 6
+    },
+    {
+      "name": "James O'Brien",
+      "title": "E-Learning Platform",
+      "message": "Built our entire LMS from scratch — video player, progress tracking, quiz system. Every feature worked on the first review. Exceptional work ethic.",
+      "rating": 5,
+      "platform": "upwork",
+      "profilePic": "https://i.pravatar.cc/150?img=60",
+      "reviewDate": "2024-10-20",
+      "order": 7
+    },
+    {
+      "name": "Hana Kobayashi",
+      "title": "Marketing Director",
+      "message": "Fast, clean, and professional. The landing page Shahbaz built for our product launch was exactly what we envisioned — and it went live 3 days early.",
+      "rating": 5,
+      "platform": "fiverr",
+      "profilePic": "https://i.pravatar.cc/150?img=19",
+      "reviewDate": "2024-09-05",
+      "order": 8
+    }
+  ]
+}
