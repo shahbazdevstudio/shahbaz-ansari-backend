@@ -15,11 +15,19 @@ const app = express();
 app.disable("x-powered-by");
 app.set("trust proxy", 1);
 
-// CORS - Allow all origins
-app.use(cors());
-
-// Explicitly handle preflight requests
-app.options(/.*/, cors());
+// CORS — token-based auth (Authorization header, no cookies), so any origin is safe to allow.
+// Runs first so preflight (OPTIONS) is answered immediately, before DB/auth/rate-limit/etc.
+const corsOptions = {
+  origin: true, // reflect the request origin (works for shahbazansari.pro, www., previews)
+  methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization", "Accept", "X-Requested-With"],
+  exposedHeaders: ["Content-Length"],
+  credentials: false,
+  maxAge: 86400,
+  optionsSuccessStatus: 204,
+};
+app.use(cors(corsOptions));
+app.options(/.*/, cors(corsOptions));
 
 // Helmet
 app.use(
